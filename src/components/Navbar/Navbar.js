@@ -1,13 +1,26 @@
 import './Navbar.css';
+import Button from '../Button/Button';
+import CarWidget from '../CarWidget/CarWidget';
 
 const Navbar = () => {
     return ( 
         <nav> 
             <div> Raizar Beauty</div>
             <div>
-                <button>Skincare</button>   
-                <button>Makeup</button> 
-                <button>Contacto</button> 
+                <Button 
+                label="Makeup"
+                />   
+                
+                <Button 
+                label="Skincare"
+                /> 
+                
+                <Button
+                 label="Contacto"
+                 /> 
+
+                 <CarWidget />
+            
             </div>
         </nav>
     )
